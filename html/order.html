@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đặt bàn</title>
+    <link rel="stylesheet" href="../css/datban.css">
+    <!--box icon-->
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+</head>
+<body>
+    <nav>
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn" >
+            <i class='bx bx-menu'></i>
+        </label>
+        <img class="logo" src="../img/logo.png" alt="Logo">
+        <ul>
+            <li><a href="trangchu.html">Trang chủ</a></li>
+            <li><a href="about.html">Về chúng tôi</a></li>
+            <li><a href="menu.html">Thực đơn</a></li>
+            <li><a href="order.html">Đặt bàn</a></li>
+            <li><a href="contact.html">Liên hệ</a></li>
+            <li><a href="dangnhap.html"><i class='bx bx-user'></i></a></li>
+        </ul>
+    </nav>
+    <section style=" background: #EFECEA;">
+        <div class="container">
+            <h1>Đặt bàn</h1>
+    
+            <form action="#">
+                <label for="name">Họ tên:</label>
+                <input type="text" id="name" name="name" required>
+                <span class="error" id="nameError"></span>
+    
+                <label for="phone">Số điện thoại:</label>
+                <input type="number" id="phone" name="phone" required>
+                <span class="error" id="phoneError"></span>
+    
+                <label for="numPeople">Số lượng người:</label>
+                <input type="number" id="numPeople" name="numPeople" min="1" required>
+                <span class="error" id="numPeopleError"></span>
+    
+                <label for="date">Ngày:</label>
+                <input type="date" id="date" name="date" required>
+    
+                <label for="time">Giờ:</label>
+                <input type="time" id="time" name="time" required>
+    
+                <label for="specialRequest">Yêu cầu đặc biệt:</label>
+                <textarea id="specialRequest" name="specialRequest"></textarea>
+    
+                <label for="table">Chọn bàn:</label>
+                <select id="table" name="table" required>
+                    <option value="">Chọn bàn</option>
+                    <option value="1">Bàn 1</option>
+                    <option value="2">Bàn 2</option>
+                    <option value="3">Bàn 3</option>
+                </select>
+                <button type="submit">Đặt bàn</button>
+                
+            </form>
+        </div>
+    </section>
+    
+
+    <footer>
+        <div class="footer">
+            <div class="footer-info" style="border-bottom: 1px solid #9c8f87;">
+                <img src="../img/logo.png" class="imgft">
+            </div>
+            <div class="a">
+                <div class="ft" style="padding: 20px 0 0 8%;">
+                    <div class="footer-lienhe">
+                        <h3>Thông tin liên hệ</h3>
+                        <a href="https://maps.app.goo.gl/5croaENqXXNmxHw36"><i class='bx bxs-map' style="padding-right: 10px;"></i>25 Nguyễn Trường Tộ, Ba Đình, Hà Nội.</a>
+                        <p style="padding: 10px 0 10px;"> <i class='bx bxs-phone' style="padding-right: 10px;"></i>Điện thoại: 0123 456 789</p>
+                        <a href="https://mail.google.com/mail/u/0/#inbox"><i class='bx bxs-envelope' style="padding-right: 10px;"></i>Email: viHaNoi@gamil.com</a>
+                    </div>
+                </div>
+                <div class="ft" style="padding-left: 12%;">
+                    <div class="social-media">
+                        <h3>Mạng xã hội</h3>
+                        <a href="https://www.facebook.com/profile.php?id=61559827141728"><i class='bx bxl-facebook-circle'></i></a>
+                        <a href=""><i class='bx bxl-instagram-alt' ></i></a>
+                        <a href=""><i class='bx bxl-twitter'></i></a>
+                    </div>
+                </div>
+                <div class="ft">
+                    <div class="form-container">
+                        <p style="padding-bottom: 10px;">Để lại thông tin để được nhận tư vấn!</p>
+                        <input type="text" placeholder="Tên của bạn">
+                        <input type="text" placeholder="Số điện thoại">
+                        <button id="btngui">Gửi thông tin</button></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="../js/booking.js"></script>
+</body>
+</html>
